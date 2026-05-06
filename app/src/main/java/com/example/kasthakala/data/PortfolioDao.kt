@@ -9,6 +9,6 @@ interface PortfolioDao {
     @Query("SELECT * FROM portfolio")
     fun getPortfolioItems(): Flow<List<PortfolioEntity>>
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertProject(project: PortfolioEntity)
 }

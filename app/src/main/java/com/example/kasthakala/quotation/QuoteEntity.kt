@@ -5,7 +5,17 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "quotes")
 data class QuoteEntity(
-    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
+
     val customerName: String,
-    val amount: Double
+
+    val customerPhone: String,
+
+    val furnitureName: String,
+
+    val amount: Double,
+
+    val notes: String
 )

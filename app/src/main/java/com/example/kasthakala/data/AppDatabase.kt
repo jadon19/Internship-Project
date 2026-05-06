@@ -8,7 +8,7 @@ import com.example.kasthakala.quotation.QuoteEntity
 
 @Database(
     entities = [FavoriteEntity::class, PortfolioEntity::class, QuoteEntity::class],
-    version = 1,
+    version = 3,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

@@ -5,7 +5,11 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "favorites")
 data class FavoriteEntity(
-    @PrimaryKey val designId: String,
+
+    @PrimaryKey
+    val designId: String,
+
     val title: String,
-    val imageUrl: String
+
+    val imageRes: Int
 )
